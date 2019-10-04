@@ -1,0 +1,80 @@
+.text-center {
+  text-align: center;
+}
+
+.Card-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.Card {
+  width: 500px;
+  height: auto;
+  line-height: 2.5;
+  border-radius: 25px;
+  background-image: linear-gradient(135deg, #abdcff 5%, #0396ff 95%);
+  /* background-image: linear-gradient(135deg, #90f7ec 0%, #32ccbc 100%);
+  background-image: linear-gradient(135deg, #feb692 25%, #ea5455 75%);
+  background-image: linear-gradient(135deg, #b2dfdb 25%, #00796b 75%); */
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 30px;
+  transition-property: width, height;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.Card-Flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.button {
+  /* margin-top: 10px; */
+  padding: 5px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  background: #000;
+  color: white;
+  cursor: pointer;
+  line-height: 1.7;
+}
+
+.Card-Elements {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fab {
+  color: black;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 650px) {
+  .Card {
+    width: 400px;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .Card {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 350px) {
+  .Card {
+    width: 225px;
+    height: auto;
+    font-size: 1.2rem;
+  }
+}
