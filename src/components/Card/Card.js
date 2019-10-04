@@ -19,8 +19,7 @@ function Card(props) {
             <div id="author">{`- ${author}`}</div>
             <div className="Card-Elements">
               <a
-                href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${content} + "~" 
-                ${author}`}
+                href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${content} ~ ${author}`}
                 id="tweet-quote"
               >
                 <i className="fab fa-twitter"></i>
