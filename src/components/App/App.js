@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Card from "../Card/Card"
 import "./App.css"
-import { async } from "q"
 
 function App() {
   //state for quote Api
@@ -12,6 +11,7 @@ function App() {
 
   useEffect(() => {
     fetchQuote()
+    // eslint-disable-next-line
   }, [])
 
   //predefined background Style for the card
@@ -19,7 +19,7 @@ function App() {
     "linear-gradient(135deg, #abdcff 5%, #0396ff 95%)",
     "linear-gradient(135deg, #90f7ec 0%, #32ccbc 100%",
     "linear-gradient(135deg, #feb692 25%, #ea5455 75%",
-    "linear-gradient(135deg, #b2dfdb 25%, #00796b 75%"
+    "linear-gradient(135deg, #b2dfdb 0%, #00796b 100%"
   ]
 
   const fetchQuote = async () => {

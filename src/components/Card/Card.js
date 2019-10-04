@@ -13,12 +13,16 @@ function Card(props) {
           <div
             className="Card Card-Flex"
             id="text"
-            style={{ backgroundImage: props.background }}
+            style={{ backgroundImage: background }}
           >
             {content}
             <div id="author">{`- ${author}`}</div>
             <div className="Card-Elements">
-              <a href="twitter.com/intent/tweet" id="tweet-quote">
+              <a
+                href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${content} + "~" 
+                ${author}`}
+                id="tweet-quote"
+              >
                 <i className="fab fa-twitter"></i>
               </a>
               <button id="new-quote" className="button" onClick={fetchQuote}>
